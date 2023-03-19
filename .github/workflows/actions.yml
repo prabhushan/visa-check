@@ -14,6 +14,7 @@ jobs:
          browser: chrome
          
      - name: Send mail on release
+       if: failure()
        uses: dawidd6/action-send-mail@v3
        with:
          server_address: smtp-mail.outlook.com
@@ -26,7 +27,7 @@ jobs:
          # Optional (recommended) mail server password:
          password: ${{secrets.MAIL_PASSWORD}}
          # Required mail subject:
-         subject: Github Actions job result
+         subject: Check Visa Bulletin
          # Required recipients' addresses:
          to: priyan.prabhu@gmail.com
          # Required sender full name (address can be skipped):
