@@ -14,6 +14,7 @@ jobs:
        with:
          command: npx cypress run
          browser: chrome
+         record: false
          
      - name: Send mail on release
        if: failure()
