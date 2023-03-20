@@ -31,6 +31,6 @@ jobs:
          # Required mail subject:
          subject: Check Visa Bulletin
          # Required recipients' addresses:
-         to: priyan.prabhu@gmail.com
+         to: priyan.prabhu@gmail.com,hema11122@gmail.com
          # Required sender full name (address can be skipped):
          from: prabhu.shan@outlook.com
